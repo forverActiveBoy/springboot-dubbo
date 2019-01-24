@@ -1,0 +1,12 @@
+server:
+  port: 8888
+#指定应用名
+dubbo:
+  application:
+    name: boot-distribute-order-service-consumer
+#指明注册中心的位置
+  registry:
+    address: zookeeper://127.0.0.1:2181
+#连接监控中心
+  monitor:
+    protocol: registry
